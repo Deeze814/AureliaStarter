@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E29B88CE-B8E8-47F0-A6B5-CCB3CF60C219}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ClassLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>AureliaStarter</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="favicon.ico" />
+    <Content Include="index.html" />
+    <Content Include="scripts\aurelia-core.js" />
+    <Content Include="scripts\aurelia-core.min.js" />
+    <Content Include="scripts\aurelia-routing.js" />
+    <Content Include="scripts\aurelia-routing.min.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\asyncToGenerator.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\classCallCheck.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\createClass.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\defaults.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\defineEnumerableProperties.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\defineProperty.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\extends.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\get.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\inherits.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\instanceof.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\interopRequireDefault.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\interopRequireWildcard.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\jsx.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\newArrowCheck.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\objectDestructuringEmpty.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\objectWithoutProperties.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\possibleConstructorReturn.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\selfGlobal.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\set.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\slicedToArray.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\slicedToArrayLoose.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\taggedTemplateLiteral.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\taggedTemplateLiteralLoose.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\temporalRef.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\temporalUndefined.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\toArray.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\toConsumableArray.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\babel-helpers\typeof.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\plugin-babel.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\regenerator-runtime.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\systemjs-babel-browser.js" />
+    <Content Include="scripts\babel\systemjs-plugin-babel%400.0.12\systemjs-babel-node.js" />
+    <Content Include="scripts\config-esnext.js" />
+    <Content Include="scripts\config-typescript.js" />
+    <Content Include="scripts\system.js" />
+    <Content Include="src\View\app.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="jsconfig.json" />
+    <None Include="scripts\.DS_Store" />
+    <None Include="scripts\babel\systemjs-plugin-babel%400.0.12.json" />
+    <None Include="scripts\babel\systemjs-plugin-babel%400.0.12\.jspm-hash" />
+    <None Include="src\.DS_Store" />
+    <None Include="__MACOSX\scripts\._.DS_Store" />
+    <None Include="__MACOSX\src\._.DS_Store" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\main.ts" />
+    <TypeScriptCompile Include="src\ViewModel\app.ts" />
+    <TypeScriptCompile Include="src\ViewModel\todo.ts" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
